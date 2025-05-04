@@ -65,6 +65,7 @@ This project uses the [PokéAPI](https://pokeapi.co/) to fetch Pokémon data. Th
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+![MIT License](/LICENSE)
 
 ## 👤 Author
 
