@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Pokémon Store</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Pokémon Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cart-icon">
+                <span class="material-icons">shopping_cart</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <a href="checkout.html" class="checkout-btn" id="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Pokémon Categories</h2>
+            <p>Browse Pokémon by their types</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <div class="categories-grid" id="categories-grid">
+                <!-- Category cards will be inserted here -->
+                <div class="loading">Loading Pokémon types...</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-pokemon" id="category-pokemon" style="display: none;">
+        <div class="container">
+            <h2 id="category-title">Pokémon of Type</h2>
+            <div class="product-grid" id="category-pokemon-grid">
+                <!-- Pokemon of selected type will be inserted here -->
+            </div>
+            <div class="back-to-categories">
+                <button id="back-to-categories-btn">Back to All Categories</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pokémon Store. This is a demo site using the PokéAPI.</p>
+        </div>
+    </footer>
+
+    <!-- Add Material Icons for cart icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./cart.js"></script>
+    <script src="./categories.js"></script>
+</body>
+</html>
