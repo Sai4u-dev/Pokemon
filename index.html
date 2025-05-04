@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon Store</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
     <header>
@@ -14,14 +14,37 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Categories</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="./src/categories.html">Categories</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="cart-icon" id="cart-icon">
+                <span class="material-icons">shopping_cart</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
         </div>
     </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <a href="./src/checkout.html" class="checkout-btn" id="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
 
     <section class="hero">
         <div class="container">
@@ -68,6 +91,9 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <!-- Add Material Icons for cart icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./src/cart.js"></script>
+    <script src="./src/script.js"></script>
 </body>
 </html>
