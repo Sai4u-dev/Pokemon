@@ -9,7 +9,7 @@ function initializeCheckoutPage() {
     // Check if cart is empty
     if (window.cart && window.cart.items.length === 0) {
         // Redirect to home page if cart is empty
-        window.location.href = '../index.html';
+        window.location.href = './index.html';
         return;
     }
     
